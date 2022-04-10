@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/base"
+        android:name="com.example.lesson11kotlin.base.Base"
+        android:label="Base" />
+    <fragment
+        android:id="@+id/booksFragment"
+        android:name="com.example.lesson11kotlin.fragment.HomeFragment"
+        android:label="BooksFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.lesson11kotlin.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.lesson11kotlin.fragment.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+
+</navigation>
